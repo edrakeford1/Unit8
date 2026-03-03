@@ -21,9 +21,14 @@ def send_messages(unsent_messages, sent_messages):
 messages = ['hello', 'how are you', 'good to see you']
 sent_messages = []
 
-send_messages(messages, sent_messages)
-show_messages(messages)
-show_messages(sent_messages)
+send_messages(messages[:], sent_messages)
+
+print("\n Original messages: ")
+print(messages)
+
+print("\nSent messages: ")
+print(messages)
+
 
 """
 8-10
@@ -33,3 +38,9 @@ called sent_messages as it's printed. After calling the function, print both of 
 were moved correctly
 """
 
+"""
+8-11
+Archived Message
+build on exercise 8-10, call the function send_messages() with a copy of a list of messages. After calling the function,
+print both of your lists to show that the original list has retained its messages.
+"""
